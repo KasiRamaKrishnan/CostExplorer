@@ -73,8 +73,8 @@ def lambda_handler(event,context):
         tableram.put_item(
             Item = {
                 "Unit": unit,
-                "Year": int(year),
-                "Month": int(month),
+                "Year": year,
+                "Month": month,
                 "Account Name": alias,
                 "Account Number": account_id
             }
